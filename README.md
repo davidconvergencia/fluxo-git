@@ -63,7 +63,7 @@ Resolva quaisquer conflitos que possam surgir durante o merge.Após resolver os 
 Após a execução do comando, teremos esse retorno:
 
 
-         ![image](https://github.com/davidconvergencia/fluxo-git/assets/139790204/b0b10ab3-312c-47c8-80fc-d75873d69970)
+  ![image](https://github.com/davidconvergencia/fluxo-git/assets/139790204/b0b10ab3-312c-47c8-80fc-d75873d69970)
 
 
          
