@@ -41,38 +41,33 @@ Este documento descreve o fluxo de trabalho a ser seguido para desenvolvimento, 
 **5. Merge na Branch de Homologação:**
 
 Certifique-se de estar na sua branch de trabalho:
-
-         ```bash
-         git checkout idticket_nomeusuario_tipo
-         ```
+  
+         git checkout idticket_nomeusuario_tipo 
       
 Atualize a sua branch de trabalho com as mudanças da "master" (se ainda não o fez):
 
-         ```bash
-         git pull origin master
-         ```
+          git pull origin master
       
 Mude para a branch de homologação (substitua `homolog` pelo nome da sua branch de homologação, se for diferente):
-         ```bash
+
          git checkout homolog
-         ```
       
 Faça um merge da sua branch de trabalho na branch de homologação:
-         ```bash
+
          git merge idticket_nomeusuario_tipo
-         ```
       
-Resolva quaisquer conflitos que possam surgir durante o merge.
+Resolva quaisquer conflitos que possam surgir durante o merge.Após resolver os conflitos, faça um push das alterações para a branch de homologação no repositório remoto:
       
-Após resolver os conflitos, faça um push das alterações para a branch de homologação no repositório remoto:
-         ```bash
          git push origin homolog
-         ```
+   
 Após a execução do comando, teremos esse retorno:
+
+
          ![image](https://github.com/davidconvergencia/fluxo-git/assets/139790204/b0b10ab3-312c-47c8-80fc-d75873d69970)
-Clique no link gerado ou copie e cole no navegador
 
 
+         
+Clique no link gerado ou copie e cole no navegador e siga os passos indicando o revisor e gere a PullRequest.
 
 **7. Revisão e Aprovação:**
 - A equipe de revisão analisará o PR e aprovará se as mudanças forem aceitáveis.
