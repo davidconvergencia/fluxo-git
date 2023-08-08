@@ -40,12 +40,12 @@ Este documento descreve o fluxo de trabalho a ser seguido para desenvolvimento, 
 
 **5. Merge na Branch de Homologação:**
 
-      1. Certifique-se de estar na sua branch de trabalho:
+    - Certifique-se de estar na sua branch de trabalho:
          ```bash
          git checkout idticket_nomeusuario_tipo
          ```
       
-      2. Atualize a sua branch de trabalho com as mudanças da "master" (se ainda não o fez):
+    - Atualize a sua branch de trabalho com as mudanças da "master" (se ainda não o fez):
          ```bash
          git pull origin master
          ```
