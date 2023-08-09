@@ -3,6 +3,17 @@
 Este documento descreve o fluxo de trabalho a ser seguido para desenvolvimento, teste e homologação de novas funcionalidades, utilizando as branches "master" e "homolog". Além disso, detalha as nomenclaturas padrão para os tipos de commit e a estrutura de nomenclatura das branches.
 
 **1. Criação das Branches:**
+
+- Verifique se a branch "homolog" já existe:
+  ```bash
+   git branch --list
+   ```
+Verifique no retorno se a branch homolog já existe, pule o próximo comando, mas se ela não for listada com o comando acima utilize o comando:
+ ```bash
+   git checkout -b homolog
+   ```
+Com isso, sua branch será criada...
+
 - Crie uma nova branch a partir da branch "master":
   ```bash
   git checkout master
@@ -70,13 +81,13 @@ Após a execução do comando, teremos esse retorno:
 Clique no link gerado ou copie e cole no navegador e siga os passos indicando o revisor e gere a PullRequest.
 
 **7. Revisão e Aprovação:**
-- A equipe de revisão analisará o PR e aprovará se as mudanças forem aceitáveis.
+- Um outro menbro da equipe ficará encarregado da revisão do código, este deve analisar o PR e aprovará se as mudanças forem aceitáveis.
 
 **8. Deploy em Ambiente de Homologação:**
-- As mudanças aprovadas serão implantadas em um ambiente de homologação.
+- As mudanças aprovadas serão implantadas em um ambiente de homologação, inicialmente de forma manual usando o Filezilla.
 
 **9. Validação e Testes Finais:**
-- A equipe de desenvolvimento e qualidade realizará testes abrangentes no ambiente de homologação.
+- A equipe de desenvolvimento e qualidade realizará testes abrangentes no ambiente de homologação e após aprovação dos stakeholders as alterações seguirão para esteira de Deploy.
 
 **10. Deploy em Produção (Opcional):**
 - Se todos os testes forem bem-sucedidos, as alterações podem ser mescladas da branch de homologação para a branch "master":
@@ -84,3 +95,5 @@ Clique no link gerado ou copie e cole no navegador e siga os passos indicando o 
   git checkout master
   git merge homolog
   ```
+
+
